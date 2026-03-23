@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/HiddenV0ice/hiddenv0ice.github.io.git
+	branch = main
