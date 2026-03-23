@@ -1,0 +1,27 @@
+{{ define "main" }}
+{{ partial "math.html" . }}
+<h1>CTF Writeups</h1>
+
+{{ $pages := where site.RegularPages "Section" "ctf" }}
+
+{{ $ctfs := slice }}
+{{ range $pages }}
+  {{ $ctfs = $ctfs | append .Params.ctf }}
+{{ end }}
+{{ $ctfs = uniq $ctfs }}
+
+{{ range $ctf := $ctfs }}
+
+  <h2>{{ $ctf }}</h2>
+
+  {{ range where $pages "Params.ctf" $ctf }}
+    <div>
+      {{ .Content }}
+    </div>
+
+    <hr>
+  {{ end }}
+
+{{ end }}
+
+{{ end }}

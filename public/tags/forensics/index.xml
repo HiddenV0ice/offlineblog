@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Forensics on HiddenV0ice cybersec blog</title>
+    <link>http://localhost:1313/tags/forensics/</link>
+    <description>Recent content in Forensics on HiddenV0ice cybersec blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/forensics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alog</title>
+      <link>http://localhost:1313/ctf/alog/</link>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ctf/alog/</guid>
+      <description>&lt;h1 id=&#34;alog&#34;&gt;Alog&lt;/h1&gt;&#xA;&lt;h2 id=&#34;challenge-beskrivelse&#34;&gt;Challenge beskrivelse&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Vi har en mistanke om, at nogen har lavet nogle mærkelige forespørgsler til vores server.  &#xA;&#xA;Kan du finde flaget?&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;løsning-af-challenge&#34;&gt;Løsning af challenge&lt;/h2&gt;&#xA;&lt;p&gt;Okay først tjekker jeg den givet fil som viser sig og være en log fil jeg spotter hurtigt noget bekendt tekst altså DDC{ jeg tager et nærmere kig og ser det er en del af et flag &amp;ldquo;DDC{Tim3_Tr4v3l&amp;rdquo; så kigger jeg lidt videre i denne log fil og få linjer længere nede ser jeg endnu en del &amp;ldquo;L0g_An4lys1s}&amp;rdquo; bum nu har jeg begge dele så jeg sætter dem sammen og fås flaget:&#xA;DDC{Tim3_Tr4v3l_L0g_An4lys1s}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Broken Invoice</title>
+      <link>http://localhost:1313/ctf/broken-invoice/</link>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ctf/broken-invoice/</guid>
+      <description>&lt;h1 id=&#34;broken-invoice&#34;&gt;Broken Invoice&lt;/h1&gt;&#xA;&lt;h2 id=&#34;challenge-beskrivelse&#34;&gt;Challenge beskrivelse&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Jeg har lige modtaget en faktura fra et firma, men den virker til at være beskadiget.  &#xA;&#xA;Kan du hjælpe mig med at finde ud af, hvad der er galt med den?&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;løsning-af-challenge&#34;&gt;Løsning af challenge&lt;/h2&gt;&#xA;&lt;p&gt;I denne opgave får vi en fil der hedder invoice i den her fil er den beskadeiget faktura jeg tager mig et kig i den men jeg når ikke og rulle alt for langt ned før jeg ser et flag:&#xA;DDC{ANOTHER_INVOICE_TO_PRINT}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pepstein</title>
+      <link>http://localhost:1313/ctf/pepstein/</link>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ctf/pepstein/</guid>
+      <description>&lt;h1 id=&#34;pepstein&#34;&gt;Pepstein&lt;/h1&gt;&#xA;&lt;h2 id=&#34;challenge-beskrivelse&#34;&gt;Challenge beskrivelse&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Huset **Pepstein** præsenterer stolt: “Game of Redactions – Geoffrey-udgaven.”&#xA;&#xA;I dette univers har den berømt diskrete Lord **Geoffrey Pepstein** fået sine sagsakter “professionelt”  &#xA;censureret af den Royale regering, som har stemplet dem **KLASSIFICERET** og smækket tykke sorte bjælker hen over de interessante dele.&#xA;&#xA;Ligesom i visse virkelige retssagsdokumenter er dramaet saftigt, men evnerne til at censurere er… knap så imponerende.&#xA;&#xA;Et sted mellem blækket og sandheden siver de statsautoriserede hemmeligheder stadig igennem.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;løsning-af-challenge&#34;&gt;Løsning af challenge&lt;/h2&gt;&#xA;&lt;p&gt;I denne opgave får vi pepstein filerne som når vi åbner mest er censureret tekst så det jeg først prøver er og copy paste det hele ind i word og gøre alt teksten samme farve haha nu kan jeg se alt tekst jeg læser lidt og lige i starten af side to spotter jeg noget bekendt tekst jeg kigger nærmere og her fandt jeg flaget:&#xA;DDC{0h-n0-w3-607-f0und-0u7}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Persistance is key</title>
+      <link>http://localhost:1313/ctf/persistance-is-key/</link>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ctf/persistance-is-key/</guid>
+      <description>&lt;p&gt;&amp;lt;%*&#xA;const ctf = await tp.system.prompt(&amp;ldquo;CTF Name&amp;rdquo;);&#xA;const chall = await tp.system.prompt(&amp;ldquo;Challenge Name&amp;rdquo;);&#xA;const category = await tp.system.prompt(&amp;ldquo;Category (web/pwn/crypto/etc)&amp;rdquo;);&#xA;const difficulty = await tp.system.prompt(&amp;ldquo;Difficulty (easy/med/hard)&amp;rdquo;);&#xA;const points = await tp.system.prompt(&amp;ldquo;Points&amp;rdquo;);&lt;/p&gt;&#xA;&lt;p&gt;const today = tp.date.now(&amp;ldquo;YYYY-MM-DD&amp;rdquo;);&#xA;const slug = chall.toLowerCase().replace(/\s+/g, &amp;ldquo;-&amp;rdquo;);&lt;/p&gt;&#xA;&lt;p&gt;// move file FIRST (safer)&#xA;await tp.file.move(&lt;code&gt;/CTF/${ctf}/${slug}.md&lt;/code&gt;);&lt;/p&gt;&#xA;&lt;h2 id=&#34;slug-slug&#34;&gt;tR += `&amp;mdash;&#xA;title: &amp;ldquo;${chall}&amp;rdquo;&#xA;ctf: &amp;ldquo;${ctf}&amp;rdquo;&#xA;challenge_name: &amp;ldquo;${chall}&amp;rdquo;&#xA;category: &amp;ldquo;${category}&amp;rdquo;&#xA;date: ${today}&#xA;tags: [ctf, writeup, ${category}]&#xA;status: draft&#xA;tools: []&#xA;techniques: []&#xA;vuln: &amp;quot;&amp;quot;&#xA;slug: &amp;ldquo;${slug}&amp;rdquo;&lt;/h2&gt;&#xA;&lt;h1 id=&#34;chall&#34;&gt;${chall}&lt;/h1&gt;&#xA;&lt;h2 id=&#34;challenge-beskrivelse&#34;&gt;Challenge beskrivelse&lt;/h2&gt;&#xA;&lt;h2 id=&#34;challenge-handout&#34;&gt;Challenge handout&lt;/h2&gt;&#xA;&lt;h2 id=&#34;løsning-af-challenge&#34;&gt;Løsning af challenge&lt;/h2&gt;&#xA;&lt;p&gt;`;&#xA;%&amp;gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

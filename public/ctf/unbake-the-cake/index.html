@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title>Unbake The Cake :: HiddenV0ice cybersec blog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Unbake The Cake Challenge beskrivelse Jeg fandt denne lækre ASCII-kage online, og jeg vil virkelig gerne prøve opskriften selv, men der mangler en ingrediens!
+Hjælp mig venligst med at finde den hemmelige string!
+Challenge handout Recipe.py def mix(a,b): &#34;&#34;&#34; Procedure for mixing Take 2 letters of our dough string. The 2 letters&#39; positions within the dough are swapped, so a ends up where b was and vice versa. &#34;&#34;&#34; doughmix = list(dough) doughmix[a], doughmix[b] = doughmix[b], doughmix[a] doughmix = &#34;&#34;.join(doughmix) return doughmix &#34;&#34;&#34; ------------------ Flag cake recipe! ------------------ Ingredients: * Flour * Sugar * Flag * Milk * Eggs &#34;&#34;&#34; # We start our recipe out with an empty dough dough = &#34;&#34; # Add flour, sugar and salt to the dough dough &#43;= &#34;flour&#34; dough &#43;= &#34;sugar&#34; dough &#43;= &#34;salt&#34; # Mix it all around until combined dough = mix(0,2) dough = mix(3,5) dough = mix(2,9) # Now with the dry ingredients properly mixed, we prepare the flag #with open(&#34;flag.txt&#34;, &#34;r&#34;) as f: #flag = f.read() # Now make sure to remove &#34;DDC{&#34; and &#34;}&#34;! # Wouldn&#39;t want that ending up in our cake, would we? #flag = flag.replace(&#34;DDC{&#34;, &#34;&#34;).replace(&#34;}&#34;, &#34;&#34;) flag = &#34;lets_go_unbaking&#34; # Now add the flag into the dry ingredients and mix it lightly dough &#43;= flag dough = mix(5,18) dough = mix(13,22) dough = mix(2,23) dough = mix(6,19) dough = mix(15,17) # Add all of the wet ingredients dough &#43;= &#34;milk&#34; dough &#43;= &#34;eggs&#34; # Mix it all up dough = mix(3,32) dough = mix(29,31) dough = mix(17,28) dough = mix(8,28) dough = mix(12,23) dough = mix(21,24) # Put the dough into the oven for 30 minutes, and out comes your delicious flag cake! #with open(&#34;Cake.txt&#34;, &#34;w&#34;) as f: print( f&#34;&#34;&#34; )\ (__) /\ [[]] @@@[[]]@@@ @@@@@@@@@[[]]@@@@@@@@@ @@@@@@@ [[]] @@@@@@@ @@@@@@@@@ [[]] @@@@@@@@@ @@@@@@@ [[]] @@@@@@@ !@@@@@@@@@ @@@@@@@@@! ! @@@@@@@ @@@@@@@ ! ! @@@@@@@@@@@@@@@@@@@@@@ ! ! @@@@@@@@@@@ ! ! ______________ ! ! {dough} ! ! -------------- ! !!!!!!! !!!!!!! !!!!!!! !!!!!!! !!!!!!!!!!!!!!!!!!!!!!! &#34;&#34;&#34;) Cake.txt: ) (__) / [[]] @@@[[]]@@@ @@@@@@@@@[[]]@@@@@@@@@ @@@@@@@ [[]] @@@@@@@ @@@@@@@@@ [[]] @@@@@@@@@ @@@@@@@ [[]] @@@@@@@ !@@@@@@@@@ @@@@@@@@@! ! @@@@@@@ @@@@@@@ ! ! @@@@@@@@@@@@@@@@@@@@@@ ! ! @@@@@@@@@@@ ! ! ______________ ! ! oligrunggflerk__oluubnstagmiagekss ! ! -------------- ! !!!!!!! !!!!!!! !!!!!!! !!!!!!! !!!!!!!!!!!!!!!!!!!!!!! Løsning af challenge Dette er en ret simpel opgave, I og med at den blot mikser to ting sammen. Gøres dette i omvendt rækkefølge, så fås det originale flag.
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="http://localhost:1313/ctf/unbake-the-cake/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/code.min.c4581949edab7810737609fc5568852bcd908945f14561e366dcd2300a370545.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/main.min.36833afd348409fc6c3d09d0897c5833d9d5bf1ff31f5e60ea3ee42ce2b1268c.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/syntax.min.a0773cce9310cb6d8ed23e50f005448facf29a53001b57e038828daa466b25c0.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/terminal.min.233716b7556db88c9cdc4a5d3f04afbd471613691cf8443016581ca89f66e913.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="http://localhost:1313/favicon.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Unbake The Cake">
+<meta property="og:description" content="Unbake The Cake Challenge beskrivelse Jeg fandt denne lækre ASCII-kage online, og jeg vil virkelig gerne prøve opskriften selv, men der mangler en ingrediens!
+Hjælp mig venligst med at finde den hemmelige string!
+Challenge handout Recipe.py def mix(a,b): &#34;&#34;&#34; Procedure for mixing Take 2 letters of our dough string. The 2 letters&#39; positions within the dough are swapped, so a ends up where b was and vice versa. &#34;&#34;&#34; doughmix = list(dough) doughmix[a], doughmix[b] = doughmix[b], doughmix[a] doughmix = &#34;&#34;.join(doughmix) return doughmix &#34;&#34;&#34; ------------------ Flag cake recipe! ------------------ Ingredients: * Flour * Sugar * Flag * Milk * Eggs &#34;&#34;&#34; # We start our recipe out with an empty dough dough = &#34;&#34; # Add flour, sugar and salt to the dough dough &#43;= &#34;flour&#34; dough &#43;= &#34;sugar&#34; dough &#43;= &#34;salt&#34; # Mix it all around until combined dough = mix(0,2) dough = mix(3,5) dough = mix(2,9) # Now with the dry ingredients properly mixed, we prepare the flag #with open(&#34;flag.txt&#34;, &#34;r&#34;) as f: #flag = f.read() # Now make sure to remove &#34;DDC{&#34; and &#34;}&#34;! # Wouldn&#39;t want that ending up in our cake, would we? #flag = flag.replace(&#34;DDC{&#34;, &#34;&#34;).replace(&#34;}&#34;, &#34;&#34;) flag = &#34;lets_go_unbaking&#34; # Now add the flag into the dry ingredients and mix it lightly dough &#43;= flag dough = mix(5,18) dough = mix(13,22) dough = mix(2,23) dough = mix(6,19) dough = mix(15,17) # Add all of the wet ingredients dough &#43;= &#34;milk&#34; dough &#43;= &#34;eggs&#34; # Mix it all up dough = mix(3,32) dough = mix(29,31) dough = mix(17,28) dough = mix(8,28) dough = mix(12,23) dough = mix(21,24) # Put the dough into the oven for 30 minutes, and out comes your delicious flag cake! #with open(&#34;Cake.txt&#34;, &#34;w&#34;) as f: print( f&#34;&#34;&#34; )\ (__) /\ [[]] @@@[[]]@@@ @@@@@@@@@[[]]@@@@@@@@@ @@@@@@@ [[]] @@@@@@@ @@@@@@@@@ [[]] @@@@@@@@@ @@@@@@@ [[]] @@@@@@@ !@@@@@@@@@ @@@@@@@@@! ! @@@@@@@ @@@@@@@ ! ! @@@@@@@@@@@@@@@@@@@@@@ ! ! @@@@@@@@@@@ ! ! ______________ ! ! {dough} ! ! -------------- ! !!!!!!! !!!!!!! !!!!!!! !!!!!!! !!!!!!!!!!!!!!!!!!!!!!! &#34;&#34;&#34;) Cake.txt: ) (__) / [[]] @@@[[]]@@@ @@@@@@@@@[[]]@@@@@@@@@ @@@@@@@ [[]] @@@@@@@ @@@@@@@@@ [[]] @@@@@@@@@ @@@@@@@ [[]] @@@@@@@ !@@@@@@@@@ @@@@@@@@@! ! @@@@@@@ @@@@@@@ ! ! @@@@@@@@@@@@@@@@@@@@@@ ! ! @@@@@@@@@@@ ! ! ______________ ! ! oligrunggflerk__oluubnstagmiagekss ! ! -------------- ! !!!!!!! !!!!!!! !!!!!!! !!!!!!! !!!!!!!!!!!!!!!!!!!!!!! Løsning af challenge Dette er en ret simpel opgave, I og med at den blot mikser to ting sammen. Gøres dette i omvendt rækkefølge, så fås det originale flag.
+" />
+<meta property="og:url" content="http://localhost:1313/ctf/unbake-the-cake/" />
+<meta property="og:site_name" content="HiddenV0ice cybersec blog" />
+
+  <meta property="og:image" content="http://localhost:1313/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2026-03-23 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="http://localhost:1313/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/ctf/unbake-the-cake/">Unbake The Cake</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2026-03-23</time></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="http://localhost:1313/tags/ctf/">ctf</a>&nbsp;
+      
+      #<a href="http://localhost:1313/tags/writeup/">writeup</a>&nbsp;
+      
+      #<a href="http://localhost:1313/tags/rev/">Rev</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="unbake-the-cake">Unbake The Cake<a href="#unbake-the-cake" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<h2 id="challenge-beskrivelse">Challenge beskrivelse<a href="#challenge-beskrivelse" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Jeg fandt denne lækre ASCII-kage online, og jeg vil virkelig gerne prøve opskriften selv, men der mangler en ingrediens!<br>
+Hjælp mig venligst med at finde den hemmelige string!</p>
+<h2 id="challenge-handout">Challenge handout<a href="#challenge-handout" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h4 id="recipepy">Recipe.py<a href="#recipepy" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">mix</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Procedure for mixing
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Take 2 letters of our dough string.
+</span></span></span><span class="line"><span class="cl"><span class="s2">    The 2 letters&#39; positions within the dough are swapped, so a ends up where b was and vice versa.
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">doughmix</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">dough</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">doughmix</span><span class="p">[</span><span class="n">a</span><span class="p">],</span> <span class="n">doughmix</span><span class="p">[</span><span class="n">b</span><span class="p">]</span> <span class="o">=</span> <span class="n">doughmix</span><span class="p">[</span><span class="n">b</span><span class="p">],</span> <span class="n">doughmix</span><span class="p">[</span><span class="n">a</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">doughmix</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">doughmix</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">doughmix</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">------------------
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">Flag cake recipe!
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">------------------
+</span></span></span><span class="line"><span class="cl"><span class="s2">Ingredients:
+</span></span></span><span class="line"><span class="cl"><span class="s2">* Flour
+</span></span></span><span class="line"><span class="cl"><span class="s2">* Sugar
+</span></span></span><span class="line"><span class="cl"><span class="s2">* Flag
+</span></span></span><span class="line"><span class="cl"><span class="s2">* Milk
+</span></span></span><span class="line"><span class="cl"><span class="s2">* Eggs
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># We start our recipe out with an empty dough</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Add flour, sugar and salt to the dough</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">+=</span> <span class="s2">&#34;flour&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">+=</span> <span class="s2">&#34;sugar&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">+=</span> <span class="s2">&#34;salt&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Mix it all around until combined</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Now with the dry ingredients properly mixed, we prepare the flag</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#with open(&#34;flag.txt&#34;, &#34;r&#34;) as f:</span>
+</span></span><span class="line"><span class="cl">   <span class="c1">#flag = f.read()</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Now make sure to remove &#34;DDC{&#34; and &#34;}&#34;!</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Wouldn&#39;t want that ending up in our cake, would we?</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#flag = flag.replace(&#34;DDC{&#34;, &#34;&#34;).replace(&#34;}&#34;, &#34;&#34;)</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="s2">&#34;lets_go_unbaking&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Now add the flag into the dry ingredients and mix it lightly</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">+=</span> <span class="n">flag</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">18</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="mi">22</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">23</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">19</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">17</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Add all of the wet ingredients</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">+=</span> <span class="s2">&#34;milk&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">+=</span> <span class="s2">&#34;eggs&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Mix it all up</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">32</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">29</span><span class="p">,</span><span class="mi">31</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="mi">28</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">28</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">23</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">21</span><span class="p">,</span><span class="mi">24</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Put the dough into the oven for 30 minutes, and out comes your delicious flag cake!</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#with open(&#34;Cake.txt&#34;, &#34;w&#34;) as f:</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl"><span class="sa">f</span><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">                   )</span><span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">                  (__)
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">                   /</span><span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">                  [[]]
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">               @@@[[]]@@@
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">         @@@@@@@@@[[]]@@@@@@@@@
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">     @@@@@@@      [[]]      @@@@@@@
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2"> @@@@@@@@@        [[]]        @@@@@@@@@
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">@@@@@@@           [[]]           @@@@@@@
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">!@@@@@@@@@                    @@@@@@@@@!
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">!    @@@@@@@                @@@@@@@    !
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">!        @@@@@@@@@@@@@@@@@@@@@@        !
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">!              @@@@@@@@@@@             !
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">!             ______________           !
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">!  </span><span class="si">{</span><span class="n">dough</span><span class="si">}</span><span class="s2">  !
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">!             --------------           !
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">!!!!!!!                          !!!!!!!
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">     !!!!!!!                !!!!!!!
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">         !!!!!!!!!!!!!!!!!!!!!!!
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><h4 id="caketxt">Cake.txt:<a href="#caketxt" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<pre tabindex="0"><code>
+                   )                  (__)
+                   /                  [[]]
+               @@@[[]]@@@
+         @@@@@@@@@[[]]@@@@@@@@@
+     @@@@@@@      [[]]      @@@@@@@
+ @@@@@@@@@        [[]]        @@@@@@@@@
+@@@@@@@           [[]]           @@@@@@@
+!@@@@@@@@@                    @@@@@@@@@!
+!    @@@@@@@                @@@@@@@    !
+!        @@@@@@@@@@@@@@@@@@@@@@        !
+!              @@@@@@@@@@@             !
+!             ______________           !
+!  oligrunggflerk__oluubnstagmiagekss  !
+!             --------------           !
+!!!!!!!                          !!!!!!!
+     !!!!!!!                !!!!!!!
+         !!!!!!!!!!!!!!!!!!!!!!!
+</code></pre><h2 id="løsning-af-challenge">Løsning af challenge<a href="#løsning-af-challenge" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Dette er en ret simpel opgave, I og med at den blot mikser to ting sammen. Gøres dette i omvendt rækkefølge, så fås det originale flag.</p>
+<p>Solve script:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Det er blot at gøre hver operation i omvendt rækkefølge og så fås flaget ved at fjerne &#34;floursugar&#34; og &#34;milkeggs&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">mix</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">doughmix</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">dough</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">doughmix</span><span class="p">[</span><span class="n">a</span><span class="p">],</span> <span class="n">doughmix</span><span class="p">[</span><span class="n">b</span><span class="p">]</span> <span class="o">=</span> <span class="n">doughmix</span><span class="p">[</span><span class="n">b</span><span class="p">],</span> <span class="n">doughmix</span><span class="p">[</span><span class="n">a</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">doughmix</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">doughmix</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">doughmix</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="s2">&#34;oligrunggflerk__oluubnstagmiagekss&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">21</span><span class="p">,</span><span class="mi">24</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">23</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">28</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="mi">28</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">29</span><span class="p">,</span><span class="mi">31</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">32</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">17</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">19</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">23</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="mi">22</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">18</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dough</span> <span class="o">=</span> <span class="n">mix</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="s2">&#34;DDC{&#34;</span><span class="o">+</span><span class="n">dough</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&#34;floursugar&#34;</span><span class="p">,</span><span class="s2">&#34;&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&#34;milkeggs&#34;</span><span class="p">,</span><span class="s2">&#34;&#34;</span><span class="p">)</span><span class="o">+</span><span class="s2">&#34;}&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span>
+</span></span></code></pre></div><p>Dette gav flaget:
+DDC{lets_go_unbaking}</p>
+
+      </div></div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2026 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

